@@ -38,7 +38,6 @@ Users should be able to:
 ### Links
 
 - Solution URL: [url](https://github.com/motuncoded/product-preview-card-component-main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 
 ### Built with
