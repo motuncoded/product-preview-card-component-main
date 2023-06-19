@@ -1,0 +1,127 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  color: hsl(228, 12%, 48%);
+}
+
+.product-preview-card {
+  display: grid;
+  place-content: center;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  max-width: 37rem;
+  margin: 0.75rem 1rem;
+}
+
+.left img {
+  object-fit: cover;
+  display: block;
+  max-width: 100%;
+  border-radius: 1rem 0rem 0rem 1rem;
+}
+
+.right {
+  background-color: hsl(0, 0%, 100%);
+  padding: 1.25rem;
+  border-radius: 0rem 1rem 1rem 0rem;
+}
+.right .first-heading {
+  font-weight: 700;
+  color: hsl(0, 0%, 50%);
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+  margin: 0.75rem 0;
+}
+.right .second-heading {
+  font-weight: 700;
+  margin: 0.75rem 0;
+  color: hsl(0, 0%, 0%);
+  line-height: 1.9rem;
+  font-family: "Fraunces", sans-serif;
+}
+.right .paragraph {
+  font-weight: 700;
+  margin: 0.75rem 0;
+  color: hsl(0, 0%, 50%);
+  line-height: 1.4rem;
+  font-size: 1rem;
+}
+
+.product-prize {
+  display: flex;
+  flex-direction: column;
+  font-family: "Fraunces", sans-serif;
+  margin: 0.25rem 0rem;
+}
+.product-prize .product-prize-des {
+  display: flex;
+  align-items: center;
+  margin: 0.75rem 0rem;
+}
+.product-prize .product-prize-des h2 {
+  color: hsl(158, 36%, 37%);
+}
+.product-prize .product-prize-des b {
+  font-size: 1rem;
+  padding-left: 1rem;
+  text-decoration: line-through;
+}
+.product-prize button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(158, 36%, 37%);
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  width: 100%;
+  font-size: 0.8rem;
+  margin: 0.75rem 0;
+  height: 30px;
+}
+.product-prize button img {
+  width: 10px;
+}
+.product-prize button p {
+  color: hsl(0, 0%, 100%);
+  padding-left: 1rem;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 400px) {
+  .product-preview-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 20.25rem;
+  }
+  .product-preview-card .left img {
+    border-radius: 1rem 1rem 0rem 0rem;
+  }
+  .product-preview-card .right {
+    border-radius: 0rem 0rem 1rem 1rem;
+    padding: 1.25rem;
+  }
+  .product-preview-card .right .second-heading {
+    font-size: 1.75rem;
+  }
+  .product-preview-card .right .paragraph {
+    font-size: 0.895rem;
+  }
+}/*# sourceMappingURL=style.css.map */
