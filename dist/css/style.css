@@ -57,7 +57,7 @@ body {
 }
 .right .paragraph {
   font-weight: 700;
-  margin: 0.75rem 0;
+  margin: 1rem 0;
   color: hsl(0, 0%, 50%);
   line-height: 1.4rem;
   font-size: 1rem;
@@ -72,7 +72,7 @@ body {
 .product-prize .product-prize-des {
   display: flex;
   align-items: center;
-  margin: 0.75rem 0rem;
+  margin: 1rem 0rem;
 }
 .product-prize .product-prize-des h2 {
   color: hsl(158, 36%, 37%);
@@ -93,7 +93,13 @@ body {
   width: 100%;
   font-size: 0.8rem;
   margin: 0.75rem 0;
+  cursor: pointer;
+  opacity: 0.95;
   height: 30px;
+}
+.product-prize button:hover {
+  background-color: hsl(158, 36%, 37%);
+  opacity: 1;
 }
 .product-prize button img {
   width: 10px;
