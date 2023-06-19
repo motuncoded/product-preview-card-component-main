@@ -25,7 +25,7 @@ body {
   place-content: center;
   grid-template-columns: 1fr 1fr;
   height: 100%;
-  max-width: 37rem;
+  max-width: 43.75rem;
   margin: 0.75rem 1rem;
 }
 
@@ -115,7 +115,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    max-width: 20.25rem;
+    max-width: 21.875rem;
   }
   .product-preview-card .left img {
     border-radius: 1rem 1rem 0rem 0rem;
