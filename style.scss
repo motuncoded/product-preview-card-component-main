@@ -33,7 +33,7 @@ body {
 	place-content: center;
 	grid-template-columns: 1fr 1fr;
 	height: 100%;
-	max-width: 37rem;
+	max-width: 43.75;
 	margin: 0.75rem 1rem;
 }
 .left {
@@ -126,7 +126,7 @@ body {
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
-		max-width: calc(40.5rem / 2);
+		max-width: calc(43.75rem/ 2);
 
 		.left {
 			img {
