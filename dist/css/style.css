@@ -26,7 +26,6 @@ body {
   grid-template-columns: 1fr 1fr;
   height: 100%;
   max-width: 43.75rem;
-  margin: 0.75rem 1rem;
 }
 
 .left img {
@@ -38,51 +37,56 @@ body {
 
 .right {
   background-color: hsl(0, 0%, 100%);
-  padding: 1.25rem;
+  padding: 1.5rem;
   border-radius: 0rem 1rem 1rem 0rem;
+  padding: 0.5rem;
 }
 .right .first-heading {
+  font-size: 0.95rem;
   font-weight: 700;
   color: hsl(0, 0%, 50%);
-  font-size: 0.8rem;
   letter-spacing: 0.3rem;
-  margin: 0.75rem 0;
+  padding: 1rem 1.5rem;
 }
 .right .second-heading {
   font-weight: 700;
-  margin: 0.75rem 0;
+  font-size: 2.5rem;
+  padding: 1rem 1.5rem;
   color: hsl(0, 0%, 0%);
-  line-height: 1.9rem;
+  line-height: 2.5rem;
   font-family: "Fraunces", sans-serif;
 }
 .right .paragraph {
   font-weight: 700;
-  margin: 1rem 0;
   color: hsl(0, 0%, 50%);
-  line-height: 1.4rem;
+  line-height: 1.8rem;
   font-size: 1rem;
+  padding: 1rem 1.5rem;
 }
 
 .product-prize {
   display: flex;
   flex-direction: column;
   font-family: "Fraunces", sans-serif;
-  margin: 0.25rem 0rem;
+  padding: 1rem 1.5rem;
 }
-.product-prize .product-prize-des {
+.product-prize .product-prize-description {
   display: flex;
   align-items: center;
-  margin: 1rem 0rem;
+  margin-bottom: 1.5rem;
 }
-.product-prize .product-prize-des h2 {
+.product-prize .product-prize-description .first-prize {
+  font-size: 2rem;
+  font-weight: 700;
   color: hsl(158, 36%, 37%);
 }
-.product-prize .product-prize-des b {
-  font-size: 1rem;
+.product-prize .product-prize-description .second-prize {
+  font-size: 0.75rem;
   padding-left: 1rem;
   text-decoration: line-through;
+  color: hsl(0, 0%, 50%);
 }
-.product-prize button {
+.product-prize .cart-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,22 +96,20 @@ body {
   border-radius: 0.5rem;
   width: 100%;
   font-size: 0.8rem;
-  margin: 0.75rem 0;
   cursor: pointer;
   opacity: 0.95;
   height: 30px;
 }
-.product-prize button:hover {
+.product-prize .cart-button:hover {
   background-color: hsl(158, 36%, 37%);
   opacity: 1;
 }
-.product-prize button img {
+.product-prize .cart-button img {
   width: 10px;
 }
-.product-prize button p {
+.product-prize .cart-button p {
   color: hsl(0, 0%, 100%);
   padding-left: 1rem;
-  font-weight: 700;
 }
 
 @media only screen and (max-width: 400px) {
@@ -115,19 +117,22 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    max-width: 21.875rem;
+    max-width: 26.75rem;
+    margin: 1rem;
   }
   .product-preview-card .left img {
     border-radius: 1rem 1rem 0rem 0rem;
   }
   .product-preview-card .right {
     border-radius: 0rem 0rem 1rem 1rem;
-    padding: 1.25rem;
   }
-  .product-preview-card .right .second-heading {
-    font-size: 1.75rem;
+  .product-preview-card .right .first-heading,
+  .product-preview-card .right .second-heading,
+  .product-preview-card .right .product-prize {
+    padding: 0.5rem 1rem;
   }
   .product-preview-card .right .paragraph {
-    font-size: 0.895rem;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
